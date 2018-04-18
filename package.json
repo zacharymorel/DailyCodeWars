@@ -2,6 +2,12 @@
   "name": "dailycodewars",
   "version": "1.0.0",
   "description": "A Place where I keep my daily codewars & hacker rank solutions",
+  "devDependencies": {
+    "babel-eslint": "^8.0.3",
+    "eslint": "^4.12.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-react": "^7.5.1"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
