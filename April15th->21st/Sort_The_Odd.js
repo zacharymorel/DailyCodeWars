@@ -40,3 +40,25 @@ function sortArray(array) {
 }
 
 console.log(sortArray([5, 3, 2, 8, 1, 4]))
+
+
+// A friend of mine's selection sort, I need ot study up on this
+// Much cleaner than my Bubble sort above
+
+// function sortArray(array) {
+//   // Return a sorted array.
+//   let min
+//   let temp
+//   for (let i = 0; i < array.length; i++) {
+//     min = i
+//     for (let j = i + 1; j < array.length; j++) {
+//       if(array[j] % 2 != 0 && array[min] % 2 != 0 && array[j] < array[min]) {
+//         min = j
+//       }
+//     }
+//     temp = array[i]
+//     array[i] = array[min]
+//     array[min] = temp
+//   }
+//   return array
+// }

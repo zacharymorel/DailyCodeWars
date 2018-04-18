@@ -18,6 +18,9 @@
   },
   "author": "Zach Morel",
   "license": "ISC",
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "bugs": {
     "url": "https://github.com/zacharymorel/DailyCodeWars/issues"
   },
