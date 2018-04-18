@@ -1,0 +1,19 @@
+{
+  "name": "dailycodewars",
+  "version": "1.0.0",
+  "description": "A Place where I keep my daily codewars & hacker rank solutions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zacharymorel/DailyCodeWars.git"
+  },
+  "author": "Zach Morel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zacharymorel/DailyCodeWars/issues"
+  },
+  "homepage": "https://github.com/zacharymorel/DailyCodeWars#readme"
+}
