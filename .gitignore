@@ -1,5 +1,4 @@
 # dependencies
-/node_modules
-npm-debug.*
+node_modules/
 .DS_Store
 .eslintrc
