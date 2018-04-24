@@ -35,6 +35,27 @@ function findRoutes(routes) {
 }
 
 
+// A friends code handling it differently
+function findRoutes(routes) {
+  let singles = [] // both strings that are not duplicated
+  let answer = "" // the final string to be assembled
+  let previous = "" // on iteration, this is the last string we just added to the answer string.
+
+  routes.map(array => array.map(string => singles.push(string))) // flatten array
+  singles = singles.filter(string => singles.filter(str => str===string).length < 2 ? string : null) // filter out strings that are not repeated
+
+  answer += singles[0] + ', ' // start the answer string with the first of the two singular strings, with a comma and a space
+  previous += singles[0] // the first 'previous' value becomes what we just added to the answer string
+
+  while (previous != singles[1]) { // while 'previous' is not the second single value (which should be the last), do the following
+    let target = routes.find(array => array[0]===previous)[1] // this is the string we are targeting to add to the answer
+    answer +=  target + ', ' // here we add the target string to the answer, followed by a comma and a space
+    previous = target // here we change 'previous' to match what we just added to the answer
+  }
+
+  return console.log(answer.slice(0,-2)) // strip the last comma and space from final answer
+}
+
 let routes = [['USA', 'BRA'], ['JPN', 'PHL'], ['BRA', 'UAE'], ['UAE', 'JPN']]
 
 findRoutes(routes)
